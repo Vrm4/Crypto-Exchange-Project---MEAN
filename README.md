@@ -5,7 +5,10 @@ This project was created just for fun, that does not use blockchain
 ## Usage 
 
 **Settings**
-
+```
+get api key from (CoinMarketCap)[https://coinmarketcap.com/api/]
+add your connect url for mongodb database , go backEnd/server.js and replace connectURL variable with your own url 
+```
 
 ``` npm
 git clone https://github.com/Vrm4/Crypto-Exchange-Project---MEAN.git
