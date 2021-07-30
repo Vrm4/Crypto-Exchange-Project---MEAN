@@ -4,6 +4,9 @@ This project was created just for fun, that does not use blockchain
 
 ## Usage 
 
+**Settings**
+
+
 ``` npm
 git clone https://github.com/Vrm4/Crypto-Exchange-Project---MEAN.git
 
