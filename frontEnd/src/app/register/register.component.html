@@ -1,0 +1,35 @@
+<div class="register">
+    <div class="register-wrapper">
+        <div class="register-title">
+            <h2>Register</h2>
+        </div>
+
+        <div class="register-forms">
+            <div class="register-forms-wrapper">
+            <app-messages></app-messages>
+                <form action="" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <input type="text" name="userName" placeholder="User Name" formControlName="userName">
+                    <input type="text" name="name"  placeholder="Name" formControlName="name">
+                    <input type="e-mail" name="eMail" placeholder="E-mail" formControlName="eMail">
+                    <input type="password" name="pass" placeholder="Password" formControlName="pass">
+                    <input type="password" placeholder="Password Repeat">
+                    <br>
+                    <div class="register-button">
+                        <button class="submit" type="submit" [disabled]="!registerForm.valid">Register </button> 
+                    </div>
+                   <div style="display: flex; justify-content:space-between">
+                        <a routerLink='/login' class="register-text" href="">Login</a>
+                        <a routerLink='/dashboard' class="register-text" href="">Home Page</a>
+                    </div> 
+                    
+        
+                </form>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="custom-shape-divider-bottom-1626245234">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>

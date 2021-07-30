@@ -1,0 +1,98 @@
+header{
+    width: 100%;
+    height: 40px;
+    
+}
+.buy-history-header {
+    padding: 10px;
+}
+.buy-history-header .ng-fa-icon{
+    cursor: pointer;
+    font-size: 19px;
+    color: white;
+}
+.buy-history-header h2 { 
+    text-align: center;
+    color : white ; 
+}
+.buy-histort-main{
+    margin-top: 85px;
+}
+.divs { 
+    position: relative;
+    height: 70px;
+    margin: 35px 15px auto 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.divs-wrapper { 
+    padding-top: 15px;
+    color: white ;
+    display: flex;
+    justify-content: space-around;
+}
+.divs-wrapper::before{
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    height: 75px;
+    width: 75px;
+    background-color: #4AC831;
+    border-radius: 50%;
+}
+.divs-wrapper-sell{
+    padding-top: 15px;
+    color: white ;
+    display: flex;
+    justify-content: space-around;
+}
+.divs-wrapper-sell::before{
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    height: 75px;
+    width: 75px;
+    background-color: #E70000;
+    border-radius: 50%;
+}
+.absolute-text{
+    font-family: 'PT Sans', sans-serif;
+    color: white ;
+    position: absolute;
+    left: 6px;
+    font-weight: 600;
+    top: 12px;
+    font-size: 15px;
+    z-index: 12;
+}
+.divs-left h4{
+    color : white ;
+}
+.divs-left span { 
+    font-size: 12px;
+    color: #A3A6A9;
+}
+.custom-shape-divider-bottom-1626245234 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: 15px;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1626245234 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1px);
+    height: 60px;
+}
+
+.custom-shape-divider-bottom-1626245234 .shape-fill {
+    fill: #FFFFFF;
+}

@@ -1,0 +1,86 @@
+.markets-coinSearch{
+    padding: 10px;
+}
+.markets-coinSearch-wrapper{
+    padding: 8px;
+    background-color: #34495e;
+    margin: auto;
+    width: 88%;
+    border-radius: 13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.markets-coinSearch-wrapper input { 
+    margin-left: 12px;
+    color: white;
+    outline: 0;
+    border: none; 
+    width: auto;
+    background-color: #34495e;
+    border-radius: 10px;
+}
+.markets-coinSearch-wrapper .ng-fa-icon{
+    margin-left: 5px;
+    font-size: 19px;
+    color: white;
+}
+.markets-coins{
+    background-color: #213246;      
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+    min-height: 200px;
+}
+.markets-coin-information p{
+    font-size: 14px;
+    color: #57606f;
+}
+.markets-coin-information{
+    padding: 10px 20px;  
+    display: flex;
+    justify-content: space-between;
+}
+.market-coins-coin{
+    margin-top: 15px;
+}
+.market-coins-coin-wrapper{
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between;
+}
+.market-coins-coin-wrapper div { 
+    max-width: 33%;
+}
+.market-coins-coin-nameAndVolume p{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.market-coins-coin-nameAndVolume p span { 
+    font-size: 11px;    
+    color: #57606f;
+}
+.market-coins-coin-nameAndVolume > span { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #57606f;
+}
+.market-coins-coin-price p{
+    font-size: 17px;
+    padding-top: 5px;
+    color: #27ae60;
+    font-family: 'Roboto', sans-serif;
+}
+.market-coins-coin-change{
+    color: white;
+    padding: 9px;
+    font-size: 12px;
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1F9362;
+    height: 10px 
+}   
+.market-coins-coin-change-neg{
+    background-color: #c0463f;  
+}
+a{
+    text-decoration: none;
+}

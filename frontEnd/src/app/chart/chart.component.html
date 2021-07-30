@@ -1,0 +1,43 @@
+<header>
+    <div class="chart-header">
+        <div class="chart-header-wrapper">
+            <fa-icon (click)='chartLocation()' [icon]="['fas', 'arrow-left']" size="1x"></fa-icon>
+        </div>
+    </div>
+</header>
+<div class="chart-coin-name">
+    <h4>{{params | uppercase}}/USDT</h4>
+</div><br>
+<div class="chart-coin-detail">
+    <div>
+        <h4>{{resultData[0].quote.USD.price.toFixed(2)}}$</h4>
+    </div>
+    <div>
+
+        <p>{{resultData[0].quote.USD.market_cap}}<br><span>Market Cap</span></p>
+        
+    </div>
+</div><br>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_043e5"></div>
+  
+
+</div>
+<!-- TradingView Widget END -->
+
+
+<footer>
+    <div class="chart-footer">
+        <div class="chart-footer-wrapper">
+            <div class="chart-footer-right">
+                <button type="button" class="btn btn-success" routerLink='/market-detail/{{params}}'>Buy</button>
+                <button type="button" class="btn btn-danger" routerLink='/market-detail/{{params}}'>Sell</button>
+            </div>
+            <div class="chart-footer-left">
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>

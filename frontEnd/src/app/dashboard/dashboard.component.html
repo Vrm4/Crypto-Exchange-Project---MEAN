@@ -1,0 +1,91 @@
+<app-header></app-header>
+
+<div class="slider">
+    <swiper
+   
+    [pagination]="{ clickable: true }"
+    [scrollbar]="{ draggable: true }"
+    [autoplay]="{
+      delay: 2500,
+      disableOnInteraction: false
+    }" 
+    >
+      <ng-template swiperSlide><img style="max-width: 100%;" src="https://a-static.besthdwallpaper.com/dijital-bitcoin-duvar-kagidi-1920x600-53099_57.jpg" alt="" srcset=""></ng-template>
+      <ng-template swiperSlide><img style="max-width: 100%;" src='https://a-static.besthdwallpaper.com/pompa-bitcoin-oldugunu-duvar-kagidi-1920x600-53102_57.jpg' ></ng-template>
+      <ng-template swiperSlide><img style="max-width: 100%;" src="https://a-static.besthdwallpaper.com/bitcoin-cryptocurrency-logo-duvar-kagidi-1920x600-63700_57.jpg" alt="" srcset=""></ng-template>
+    </swiper>
+
+</div>
+<div class="homePage-information">
+  <div class="homePage-information-wrapper">
+    <div>
+      <a href="" routerLink='/buy-history'><fa-icon [icon]="['fas', 'history']" size="1x"></fa-icon></a><br>
+      <p>Buy History</p>
+    </div>
+    <div>
+      <a href="" routerLink='/markets'><fa-icon [icon]="['fas', 'coins']" size="1x"></fa-icon></a><br>
+      <p>Coins</p>
+    </div>
+    <div>
+      <a href="" routerLink='/wallet'><fa-icon [icon]="['fas', 'user-circle']" size="1x"></fa-icon></a><br>
+      <p>Account</p>
+    </div>
+  </div>
+</div>
+<div class="coins-slider">
+  <swiper
+  style="overflow: visible !important;"
+    [width] = '250'
+    [spaceBetween]="30"
+    [freeMode]="true"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide *ngFor='let sliderData of newData'>
+      <div class="coin-slider-coins">
+        <div class="coin-slider-coins-wrapper">
+          <div class="coin-slider-name">
+              <div>
+                <h2>{{sliderData.name}}</h2>
+              </div>
+              <div class="coin-icon">
+                <img src="../../assets/images/{{sliderData.symbol.toLowerCase()}}.svg" alt="">
+              </div>
+          </div>
+          <div class="coin-slider-price-information">
+            <h4 #coinPrice>${{sliderData.quote.USD.price.toFixed(2)}}</h4>
+          </div>  
+
+          <div class="coin-slider-chart" #ChartDIV>
+            <div class="tradingview-widget-container" >
+              <div id="tradingview_{{sliderData.name}}" > </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </ng-template>    
+
+  </swiper>
+</div><br>
+<div class="homePage-coins">
+  <div class="homePage-coins-text">
+    <h3>Coins</h3>
+    <p>All</p>
+  </div>
+  <div class="homePage-coin-wrapper">
+    <div class="homePage-coin-coins" *ngFor='let sliderData of newData'>
+      <div class="homePage-coin-coins-name">
+        <div>
+          <img src="../../assets/images/{{sliderData.symbol.toLowerCase()}}.svg" alt="">
+        </div>
+        <div>
+          <p>{{sliderData.name}}</p>
+          <p>${{sliderData.quote.USD.price.toFixed(2)}}</p>
+        </div>
+      </div>
+      <div class="homePage-coin-coins-status" [ngClass]="findNegativeString(sliderData.quote.USD.percent_change_24h)">
+        <h5>{{sliderData.quote.USD.percent_change_24h.toFixed(2)}}%</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

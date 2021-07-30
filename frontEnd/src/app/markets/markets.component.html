@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<div class="markets">
+    <div class="markets-wrapper">
+        <div class="markets-coinSearch">
+            <div class="markets-coinSearch-wrapper">
+                <fa-icon [icon]="['fas', 'search']" size="1x"></fa-icon>
+                <input type="text" name="" id="" placeholder="Search Coin">
+            </div>
+        </div>
+        <div class="markets-coins">
+            <div class="markets-coin-information">
+                <p>Name/Volume</p>
+                <p>Price</p>
+                <p>24h Change</p>
+            </div>
+            <div class="market-coins-coin" *ngFor='let marketsData of newData'>
+                <div class="market-coins-coin-wrapper">
+                    <div class="market-coins-coin-nameAndVolume">
+                        <a href="" routerLink='/market-detail/{{marketsData.symbol | lowercase}}'><p>{{marketsData.symbol}} <span>/USDT</span></p></a>
+                        <span>144,34</span>
+                    </div>
+                    <div class="market-coins-coin-price">
+                        <p>${{marketsData.quote.USD.price.toFixed(2)}}</p>
+                    </div>
+                    <div [ngClass]="findNegativeString(marketsData.quote.USD.percent_change_24h)">
+                        {{marketsData.quote.USD.percent_change_24h.toFixed(2)}}%
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

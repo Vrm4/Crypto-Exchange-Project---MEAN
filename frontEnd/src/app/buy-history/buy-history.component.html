@@ -1,0 +1,27 @@
+<header>
+    <div class="buy-history-header">
+        <fa-icon (click)='historyLocation()' [icon]="['fas', 'arrow-left']" size="1x"></fa-icon>
+        <h2><fa-icon [icon]="['fas', 'history']" size="1x"></fa-icon> Buy History</h2>
+    </div>
+</header>
+<div class="buy-histort-main">  
+    <div class="divs" *ngFor = 'let history of OrderHistoryData'>
+        <p class="absolute-text" *ngIf='history.order === true'>Buy</p>
+        <p class="absolute-text" *ngIf='history.order === false'>Sell</p>
+        <div [ngClass]="{'divs-wrapper-sell' : history.order === false , 'divs-wrapper' : history.order === true}" >
+            <div class="divs-left">
+                <h4>{{history.name}} <span>/USDT</span></h4>
+                <p>{{history.date}}</p>
+            </div>
+            <div class="divs-right">
+                <h5>{{history.quantity}}</h5>
+                <p>{{history.price}}$</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="custom-shape-divider-bottom-1626245234">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>

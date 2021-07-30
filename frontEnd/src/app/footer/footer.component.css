@@ -1,0 +1,22 @@
+footer{
+    margin-top: 20px;
+    width: 100%;
+    position:sticky;   
+    background-color: #10344C; 
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+.footer-wrapper{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-wrapper a .ng-fa-icon{
+    font-size: 24px;
+    padding: 20px;
+    align-items: center;
+    color: white;
+}

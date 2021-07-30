@@ -1,0 +1,72 @@
+header{
+    width: 100%;
+    height: 40px;
+    padding: 6px
+}
+h2{
+    text-align: center;
+    color: white;
+    padding-top: 20px;  
+}
+.deposit-header {
+    padding: 10px;
+}
+.deposit-header .ng-fa-icon{
+    cursor: pointer;
+    font-size: 19px;
+    color: white;
+}
+.deposit-main{
+    width: 100%;
+    margin-top: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.deposit-main-wrapper{
+    width: 68%;
+    margin: auto;
+}
+.deposit-main input{ 
+    height: 35px;
+    width: 100%;
+    outline: 0;
+    border-radius: 5px;
+    padding-left: 7px;
+    border: none;
+    color: white;
+    background-color: #34495e;
+}
+.deposit-main button{
+    color: white;
+    font-size: 16px;
+    padding: 9px ;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    background-image: linear-gradient(326deg, #f16d55 26%, #f39c12 74%);
+}
+.deposit-main input::placeholder{
+    color: lightgray;
+}
+.custom-shape-divider-bottom-1626245234 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1626245234 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1px);
+    height: 60px;
+}
+
+.custom-shape-divider-bottom-1626245234 .shape-fill {
+    fill: #FFFFFF;
+}

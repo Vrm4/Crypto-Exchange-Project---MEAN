@@ -1,0 +1,134 @@
+<app-header></app-header>
+<br>
+<div class="market-detail">
+    <div class="market-detail-coin-information">
+        <div class="market-detail-coin-information-name">
+            <p>{{params | uppercase}}<span> /USDT</span></p>
+        </div>
+        <div class="market-detail-icons">   
+            <a href="" routerLink='/chart/{{params}}'><fa-icon [icon]="['fas', 'chart-line']" size="1x"></fa-icon></a>
+            <fa-icon [icon]="['fas', 'ellipsis-v']" size="1x"></fa-icon>
+        </div>
+    </div>
+    <div class="market-detail-wrapper">
+
+        <div class="market-detial-sell-buy-orders">
+            <div style="display: flex; justify-content:space-between; color:#57606f">
+                <p>Price</p>
+                <p>Quantity</p>
+            </div>
+            <div class="sell-order">
+              <div class="sell-prices" >
+                  <div>
+                      <ul>
+                          <li *ngFor = 'let SellOrder of orderDataFalse; index as i;'>
+                              <div *ngIf='i < 7'>
+                                <p>{{SellOrder.quantity}}</p>
+                                <p>{{SellOrder.coinPrice}}</p>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+
+              </div>
+            </div>
+            <div class="current-price">
+                <h4>${{marketDetailDataReq[0].quote.USD.price.toFixed(2)}}</h4>
+            </div>
+            <div class="buy-order">
+                <div class="buy-prices" >
+                    <div>
+                        <ul>
+                            <li *ngFor = 'let buyOrder of orderDataTrue.reverse(); index as i;'>
+                                <div *ngIf='i < 7'>
+                                    <p>{{buyOrder.quantity}}</p>
+                                    <p>{{buyOrder.coinPrice}}</p>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="market-detail-sell-buy-input">
+            <div class="market-detail-sell-buy-input-wrapper">
+                <div class="buy-sell-button">
+                    <button type="button" class="buy-button" (click)='buyInputs()'>Buy</button>
+                    <button type="button" class="sell-button" (click)='sellInputs()'>Sell</button>
+                </div>
+                <br>
+                <div class="market-detail-sell-buy-input-form">
+                    <div class="market-detail-sell-buy-input-form-wrapper">
+                        
+                        <div class="markets-form-group">
+                          <app-messages></app-messages><br>
+                            <select name="" id="">
+                                <option value="">Market</option>
+                                <option value="">Limit</option>
+                                <option value="">Stop-Limit</option>
+                                <option value="">OCO</option>
+                            </select>
+                            <form action='' [formGroup]='orderForm' (ngSubmit)='onSubmit()'>
+                            <div>
+                                
+                                    <input type="text" placeholder="Price"  formControlName='coinPrice'>
+                                    <input type="text" placeholder="Quantity" [(ngModel)]='coinQuantityInput' formControlName='coinQuantity'>
+                                    <input type="text" placeholder="Usdt" [(ngModel)]='coinUsdtInput' formControlName='coinUsdt'>
+    
+                                    <div class="percent">
+                                        <span (click)='percent1()' >25%</span>
+                                        <span (click)='percent2()' >50%</span>
+                                        <span (click)='percent3()' >75%</span>
+                                        <span (click)='percent4()' >100%</span>
+                                    </div>
+                                
+                            </div>
+                            <div class="coin-buy-buttons">
+                                <button *ngIf="tokerService.getUserToken('loginDatas')" type="submit" class="coin-buy-button">Buy</button>
+                                <button *ngIf="!tokerService.getUserToken('loginDatas')" type="button" routerLink='/login' class="coin-buy-button">Login</button>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="markets-form-group" id="sell-group">
+                            <app-messages></app-messages><br>
+                            <select name="" id="">
+                                <option value="">Market</option>
+                                <option value="">Limit</option>
+                                <option value="">Stop-Limit</option>
+                                <option value="">OCO</option>
+                            </select>
+                            <form action='' [formGroup]='orderForm' (ngSubmit)='SellonSubmit()'>
+                            <div>
+                                
+                                    <input type="text" placeholder="Price"  formControlName='coinPrice'>
+                                    <input type="text" placeholder="Quantity" [(ngModel)]='coinQuantityInput' formControlName='coinQuantity'>
+                                    <input type="text" placeholder="Usdt" [(ngModel)]='coinUsdtInput' formControlName='coinUsdt'>
+    
+                                    <div class="percent">
+                                        <span (click)='percent1Sell()' >25%</span>
+                                        <span (click)='percent2Sell()' >50%</span>
+                                        <span (click)='percent3Sell()' >75%</span>
+                                        <span (click)='percent4Sell()' >100%</span>
+                                    </div>
+                                
+                            </div>
+                            <div class="coin-buy-buttons">
+                                <button *ngIf="tokerService.getUserToken('loginDatas')" type="submit" class="coin-sell-button">Sell</button>
+                                <button *ngIf="!tokerService.getUserToken('loginDatas')" type="button" routerLink='/login' class="coin-sell-button">Login</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+</div>
+
+
+<app-footer></app-footer>

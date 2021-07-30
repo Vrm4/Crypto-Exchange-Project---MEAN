@@ -1,0 +1,16 @@
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
+.wrapper{
+    position: relative;
+    background-color: #10344C; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 700px;
+    width: 430px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

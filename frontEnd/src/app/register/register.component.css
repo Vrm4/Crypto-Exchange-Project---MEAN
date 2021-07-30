@@ -1,0 +1,156 @@
+/*
+.register{
+    width: 70%;
+    min-height: 400px;
+    margin: 55px auto auto auto;
+    background-color: #334257;
+    padding: 10px;
+    border-radius: 8px;
+}
+.register-forms{
+    width: 90%;
+    margin: auto;
+}
+.register-forms input { 
+    padding-left: 5px;
+    margin-top: 30px;
+    height: 32px;
+    border: 1px solid #476072;
+    outline : 0 ;
+    width: 100%;
+    color: white;
+    border-radius: 6px;
+    background-color: #476072;
+}
+.register-forms input:focus  { 
+    height: 40px;
+    transition-duration: 0.4s;
+}
+.register-forms input::placeholder{
+    color: white;   
+}
+.register-title h2{
+    text-align: center;
+    color: white;
+
+}
+.register-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.register-button button{
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    background-color: #1F9362;
+}
+.login-text{
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+*/
+.register{
+    width: 70%;
+    min-height: 400px;
+    margin: 100px auto auto auto;
+   
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 12;
+    
+}   
+.register::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    background-color: #4AC831;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.register::after{
+    content: '';
+    position: absolute;
+    bottom: 120px;
+    left: -55px;
+    width: 120px;
+    height: 120px;
+    background-color: #4AC831;
+    border-radius: 50%;
+}
+
+.register-forms{
+    width: 90%;
+    margin: auto;
+}
+.register-forms input { 
+    padding-left: 5px;
+    margin-top: 30px;
+    height: 32px;
+    border: 1px solid #476072;
+    outline : 0 ;
+    width: 100%;
+    color: white;
+    border-radius: 6px;
+    background-color: #476072;
+}
+.register-forms input:focus  { 
+    height: 40px;
+    transition-duration: 0.4s;
+}
+.register-forms input::placeholder{
+    color: white;   
+}
+.register-title h2{
+    text-align: center;
+    color: white;
+
+}
+.register-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.register-button button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    background-color: #4AC831;
+}
+.register-text{
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.custom-shape-divider-bottom-1626245234 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: 15px;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1626245234 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1px);
+    height: 60px;
+}
+
+.custom-shape-divider-bottom-1626245234 .shape-fill {
+    fill: #FFFFFF;
+}
+

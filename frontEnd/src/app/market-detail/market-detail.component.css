@@ -1,0 +1,146 @@
+.market-detail-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.market-detial-sell-buy-orders{
+    margin: auto;
+    background-color: #0A1931;
+    padding: 10px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sell-prices p{
+    font-size: 14px;
+    color: #B03B3B;
+}
+.sell-prices div:nth-child(1) ul li{
+    list-style-type: none;
+} 
+.sell-prices div:nth-child(1) ul li div:nth-child(1) {
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.current-price h4{
+    padding: 8px 9px;
+    color: white;
+}  
+.buy-prices div:nth-child(1) ul li{
+    list-style-type: none;
+} 
+.buy-prices div:nth-child(1) ul li div:nth-child(1) {
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.buy-prices p{
+    color: #348E2F;
+    font-size: 14px;
+}
+.market-detail-sell-buy-input{
+    margin: auto;
+    width: 46%;
+    border-radius: 10px;
+    background-color:#0A1931 ;
+    padding: 10px;
+}
+.buy-sell-button{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-sell-button button { 
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.sell-button{
+    background-color: #c0392b;
+}
+.buy-button{
+    background-color: #27ae60;
+}
+.market-detail-sell-buy-input-form{
+    padding: 5px;
+}
+.markets-form-group select{
+    padding: 4px;   
+    outline: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #213246;
+    width: 100%;
+    margin: auto;
+    border: none;
+}
+.markets-form-group input {
+    color: white;
+    padding-left: 5px;
+    width: 98%;
+    outline: 0;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 8px;
+    background-color: #213246;
+}
+.markets-form-group input:nth-child(1){
+    background-color: #34495e;
+}
+.coin-buy-buttons{
+    display: flex;
+    justify-content: center;
+}
+.markets-form-group button{
+    margin: 14px auto auto auto;
+    border: none ;
+    border-radius: 5px;
+    padding: 7px 24px;
+    background-color: #27ae60;
+    color: white;
+}
+
+.market-detail-coin-information{
+    padding: 8px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.market-detail-coin-information-name p{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+.market-deteail-coin-information-name span {
+    color: #57606f;
+}
+.market-detail-icons{
+    display: flex;  
+    flex-wrap: wrap;
+}
+.market-detail-icons .ng-fa-icon{
+    color: white;
+    font-size: 19px;
+    padding: 2px 15px;
+}
+
+.percent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.percent span{
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 3px 6px;
+    background-color: #34495e;
+}
+#sell-group{
+    display:none
+}
+#sell-group button { 
+    background-color: #c0392b;
+}
