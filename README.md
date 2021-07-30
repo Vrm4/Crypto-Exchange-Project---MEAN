@@ -1,3 +1,4 @@
-Npm Packectes 
+CRYPTO EXCHANGE APP 
 
--npm i ngx-avatar
+
+        
