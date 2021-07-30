@@ -22,7 +22,7 @@ cd frontEnd
 npm install 
 ng serve
 ```
- **`if you get NGCC error , go node frontEnd\node_modules\@angular\compiler-cli\ngcc and delete __ngcc_lock_file__ file`**
+ **`if you get NGCC error , go frontEnd\node_modules\@angular\compiler-cli\ngcc and delete __ngcc_lock_file__ file`**
 
 
 ## File structure
