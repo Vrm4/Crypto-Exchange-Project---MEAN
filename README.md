@@ -2,6 +2,22 @@
 
 This project was created just for fun, that does not use blockchain
 
+## Usage 
+
+``` npm
+git clone https://github.com/Vrm4/Crypto-Exchange-Project---MEAN.git
+
+cd backEnd
+npm install
+node server.js
+
+cd frontEnd 
+npm install 
+ng serve
+```
+`if you get NGCC error , go node frontEnd\node_modules\@angular\compiler-cli\ngcc and delete __ngcc_lock_file__ file`
+
+
 ## File structure
 
 - |-- **backend** 
