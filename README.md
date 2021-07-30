@@ -1,4 +1,4 @@
-**CRYPTO EXCHANGE APP** 
+# **CRYPTO EXCHANGE APP** 
 
 This project was created just for fun, that does not use blockchain
 
