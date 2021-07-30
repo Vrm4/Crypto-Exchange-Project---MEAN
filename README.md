@@ -2,6 +2,8 @@
 
 This project was created just for fun, that does not use blockchain
 
+## File structure
+
 - |-- **backend** 
     - |-- schemas => this folder have database schemas
     - |-- api.js => it have api from coinmarketcap.com 
