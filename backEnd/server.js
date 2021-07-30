@@ -18,7 +18,7 @@ let jwsToken = (username) =>{
 }
 
 // connect database 
-const connectURL = 'mongodb+srv://ngtutoriol:text1234@nodetuts.nhgzc.mongodb.net/cryptoApp?retryWrites=true&w=majority'
+const connectURL = 'your mongo db url '
 mongoose.connect(connectURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
