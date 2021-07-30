@@ -28,7 +28,7 @@ This project was created just for fun, that does not use blockchain
             |-- user-data.service.ts => get user data
         |-- assets
             |-- images => photo of coins 
-            |-- chart => js file for chart library from https://www.tradingview.com/widget/advanced-chart/
+            |-- chart => js file for chart library from [Tradingview](https://www.tradingview.com/widget/advanced-chart/)  
 
 
         
