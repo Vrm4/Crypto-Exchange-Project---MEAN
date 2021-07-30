@@ -2,11 +2,11 @@
 
 This project was created just for fun, that does not use blockchain
 
-1. |-- **backend** 
-    1. |-- schemas => this folder have database schemas
-    1. |-- api.js => it have api from coinmarketcap.com 
-    1. |-- server.js => database operations 
-1. |-- **fronted** => Angular folders
+- |-- **backend** 
+    - |-- schemas => this folder have database schemas
+    - |-- api.js => it have api from coinmarketcap.com 
+    - |-- server.js => database operations 
+- |-- **fronted** => Angular folders
     |--src
        |-- app
             |-- buy-history => trading history
